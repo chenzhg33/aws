@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/stock/fee', function () {
+    $data = [
+        'title' => 'A股费用'
+    ];
+    return view('stock.fee', $data);
+});
